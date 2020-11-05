@@ -2,7 +2,7 @@
   <div id="app">
     <NavBar/>
     <WebsiteHeader/>
-    <Profile/>
+    <Profile id="profile"/>
     
   </div>
 </template>
