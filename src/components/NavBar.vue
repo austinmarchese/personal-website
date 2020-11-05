@@ -1,12 +1,12 @@
 <template>
 <div>
   <b-navbar  fixed='top' toggleable="lg" type="light" variant="light">
-    <b-navbar-brand href="#">NavBar</b-navbar-brand>
+    <b-navbar-brand style="font-family: 'Comic Sans MS', cursive, sans-serif;" href="#">A.M.</b-navbar-brand>
     
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
         <b-nav-item href="#profile">Profile</b-nav-item>
-        <b-nav-item href="#profile">Experiences</b-nav-item>
+        <b-nav-item href="#experiences">Experiences</b-nav-item>
         <b-nav-item href="#profile">Abilities</b-nav-item>
         <b-nav-item href="#profile">Projects</b-nav-item>
         <b-nav-item href="#profile">Contacts</b-nav-item>
@@ -16,7 +16,9 @@
       <!-- Right aligned nav items -->
     </b-collapse>
           <b-navbar-nav class="ml-auto">
-        <b-nav-item href="#" disabled>BTC</b-nav-item>
+        <b-nav-item href="#" disabled>
+          <b-img v-bind="this.mainProps"   :src="require('../assets/btcLogo.svg')" rounded="circle" alt="Circle image"></b-img>
+          ${{this.btcPrice}} USD</b-nav-item>
       </b-navbar-nav>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
   </b-navbar>
@@ -25,12 +27,35 @@
 
 <script>
 
+import axios from 'axios'
+
+
 export default {
   name: 'NavBar',
   components: {
   },
+  data() {
+    return {
+      btcPrice: null,
+      mainProps: {  width: 40, height: 40, class: 'm1' }
+    }
+  },
   computed: {
   },
+
+
+  mounted() {
+    axios.get('https://api.coindesk.com/v1/bpi/currentprice.json')
+  .then(response => (this.btcPrice = Math.trunc(response.data.bpi["USD"]["rate_float"])))
+  .catch(this.btcPrice = "0")    
+    window.setInterval(() => {
+  axios.get('https://api.coindesk.com/v1/bpi/currentprice.json')
+  .then(response => (this.btcPrice = Math.trunc(response.data.bpi["USD"]["rate_float"])))
+  .catch(this.btcPrice = "0")    
+  }, 10000)
+
+
+  }
 };
 </script>
 <style>

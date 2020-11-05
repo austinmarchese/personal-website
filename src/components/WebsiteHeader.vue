@@ -1,19 +1,11 @@
 <template>
 <div class="header-container">
-  <b-card
-    overlay
-    :img-src="require('../assets/SanDiego.jpg')"
-    img-alt="Card Image"
-    class="text-left"
-    style="padding-top:10px"
-    text-variant="white"
-    title="Austin Marchese"
-    sub-title="Software Engineer"
-  >
-    <b-card-text class="header-text">
-      Life's too short to take seriously. Enjoy.
-    </b-card-text>
-  </b-card>
+  <h1 class="display-4">Welcome..</h1>
+  <p class="lead">Men of Action are Favored by the Goddes of Good Luck</p>
+  <hr class="my-4">
+  <p class="lead">
+    <b-button variant="primary" href="#profile">Explore</b-button>
+  </p>
 </div>
 </template>
 
@@ -28,8 +20,11 @@ export default {
 };
 </script>
 <style>
+
 .header-container {
-    padding-top: 50px;
+    padding-top: 150px;
+    padding-bottom: 500px;
+    margin:20px;
 }
 .header-text {
     text-align: left;

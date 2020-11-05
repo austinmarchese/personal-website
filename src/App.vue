@@ -1,8 +1,11 @@
 <template>
-  <div id="app">
+
+  <div :style="{ 
+    backgroundImage: 'url(' + require('@/assets/SanDiego.jpg') + ')' }" id="app">
     <NavBar/>
     <WebsiteHeader/>
-    <Profile id="profile"/>
+    <Profile  style="padding-top:200px" class="content" id="profile"/>
+    <Profile id="experiences"/>
     
   </div>
 </template>
@@ -29,5 +32,14 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    /* height: 90vh; */
+}
+.content {
+  padding-top:40px;
+  padding-bottom:40px;
 }
 </style>
