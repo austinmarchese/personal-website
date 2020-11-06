@@ -17,7 +17,7 @@
     </b-collapse>
           <b-navbar-nav class="ml-auto">
         <b-nav-item href="#" disabled>
-          <b-img v-bind="this.mainProps"   :src="require('../assets/btcLogo.svg')" rounded="circle" alt="Circle image"></b-img>
+          <b-img v-bind="this.mainProps" class="bitcoinPrice"    :src="require('../assets/btcLogo.svg')" rounded="circle" alt="Circle image"></b-img>
           ${{this.btcPrice}} USD</b-nav-item>
       </b-navbar-nav>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -52,7 +52,7 @@ export default {
   axios.get('https://api.coindesk.com/v1/bpi/currentprice.json')
   .then(response => (this.btcPrice = Math.trunc(response.data.bpi["USD"]["rate_float"])))
   .catch(this.btcPrice = "0")    
-  }, 10000)
+  }, 2500)
 
 
   }
@@ -63,6 +63,9 @@ export default {
   flex-grow: 0;
 }
 
+.bitcoinPrice{
+  font-weight: 400;
+}
 .desktop-nav {
     z-index: 2;
     background: white;

@@ -9,6 +9,7 @@
     "start": "vue-cli-service serve --open"
   },
   "dependencies": {
+    "@growthbunker/vuetimeline": "^0.1.17",
     "axios": "^0.21.0",
     "bootstrap": "^4.5.3",
     "bootstrap-vue": "^2.18.1",

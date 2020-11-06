@@ -18,6 +18,14 @@ Vue.use(BootstrapVue);
 // // Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin);
 
+import VueTimeline from "@growthbunker/vuetimeline";
+
+// Vue.use(VueTimeline);
+Vue.use(VueTimeline, {
+  // Specify the theme to use: dark or light (dark by default).
+  theme: "light",
+});
+
 // createApp(App).$mount('#app');
 new Vue({
     render: (h) => h(App),

@@ -3,9 +3,11 @@
   <div :style="{ 
     backgroundImage: 'url(' + require('@/assets/SanDiego.jpg') + ')' }" id="app">
     <NavBar/>
+
     <WebsiteHeader/>
     <Profile  style="padding-top:200px" class="content" id="profile"/>
-    <Profile id="experiences"/>
+    <Timeline id="experiences" class="content"/>
+
     
   </div>
 </template>
@@ -14,6 +16,7 @@
 import NavBar from './components/NavBar.vue';
 import WebsiteHeader from './components/WebsiteHeader.vue';
 import Profile from './components/Profile.vue';
+import Timeline from './components/Timeline.vue';
 
 export default {
   name: 'App',
@@ -21,6 +24,7 @@ export default {
     NavBar,
     WebsiteHeader,
     Profile,
+    Timeline,
   },
 };
 </script>

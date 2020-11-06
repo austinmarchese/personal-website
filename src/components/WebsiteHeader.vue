@@ -1,6 +1,6 @@
 <template>
 <div class="header-container">
-  <h1 class="display-4">Welcome..</h1>
+  <h1 class="display-4">Welcome...</h1>
   <p class="lead">Men of Action are Favored by the Goddes of Good Luck</p>
   <hr class="my-4">
   <p class="lead">
@@ -22,7 +22,7 @@ export default {
 <style>
 
 .header-container {
-    padding-top: 150px;
+    padding-top: 110px;
     padding-bottom: 500px;
     margin:20px;
 }
