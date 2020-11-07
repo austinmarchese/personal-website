@@ -20,11 +20,15 @@ Vue.use(IconsPlugin);
 
 import VueTimeline from "@growthbunker/vuetimeline";
 
-// Vue.use(VueTimeline);
+import VueWorldMap from 'vue-world-map';
+
+Vue.use(VueWorldMap);
+
 Vue.use(VueTimeline, {
   // Specify the theme to use: dark or light (dark by default).
   theme: "light",
 });
+
 
 // createApp(App).$mount('#app');
 new Vue({

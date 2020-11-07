@@ -1,5 +1,6 @@
 # personal-webssite
-# Inspiration: http://www.pascalvangemert.nl/#/profile
+# Inspiration: http://www.pascalvangemert.nl/#/
+# Packages: https://www.growthbunker.dev/vuetimeline/
 ## Project setup
 ```
 npm install
