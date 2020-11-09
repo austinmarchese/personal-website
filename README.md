@@ -1,6 +1,7 @@
 # personal-webssite
 # Inspiration: http://www.pascalvangemert.nl/#/
 # Packages: https://www.growthbunker.dev/vuetimeline/
+# Icons Sourced from https://github.com/LeCoupa/vuesocial/tree/master/assets/networks
 ## Project setup
 ```
 npm install

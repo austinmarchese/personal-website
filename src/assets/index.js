@@ -121,7 +121,7 @@ const events = [
         eventTitle: "The start of Banter Audio",
         eventDescription: "Co-found a tech company that's goal is to change how users experince podcasts. Stay tuned :)",
         eventType: EXPERIENCE,
-        eventThumbnail: "",
+        eventThumbnail: require('./Banter_logo_dark.png'),
         eventDate: '2020-05-05',
       },
       {
@@ -135,7 +135,7 @@ const events = [
         eventTitle: "Explore the Country",
         eventDescription: "Relocated to Aventura, Florida for 8 weeks, currently living in San Diego",
         eventType: Travel,
-        eventThumbnail: "",
+        eventThumbnail: require('./SanDiego.jpg'),
         eventDate: '2020-09-01',
       },
 
@@ -149,75 +149,75 @@ const skills = {
     languages: [
         {
             skill: "Python",
-            rating: "4.5"
+            rating: 4.5
         },
         {
             skill: "TypeScript",
-            rating: "4"
+            rating: 4
         },
         {
             skill: "HTML/CSS",
-            rating: "4.5"
+            rating: 4.5
         },
         {
             skill: "JavaScript",
-            rating: "4"
+            rating: 4
         },
         {
             skill: "Java",
-            rating: "3"
+            rating: 3
         },
     ],
     frameworks: [
         {
             skill: "Vue",
-            rating: "4.5"
+            rating: 4.5
         },
         {
             skill: "Angular",
-            rating: "4.5"
+            rating: 4.5
         },
         {
             skill: "React Native",
-            rating: "4.5"
+            rating: 4.5
         },
         {
             skill: "React",
-            rating: "4"
+            rating: 4
         },
         {
             skill: "Flask",
-            rating: "4"
+            rating: 4
         },
         {
             skill: "Tornado",
-            rating: "4"
+            rating: 4
         },
     ],
     other: [
         {
             skill: "AWS",
-            rating: "3"
+            rating: 3
         },
         {
             skill: "Cloud Foundry",
-            rating: "4"
+            rating: 4
         },
         {
             skill: "Figma",
-            rating: "4"
+            rating: 4
         },
         {
             skill: "Redux",
-            rating: "3.5"
+            rating: 3.5
         },
         {
             skill: "Web Scraping",
-            rating: "4.5"
+            rating: 4.5
         },
         {
             skill: "Navigating the Crypto World",
-            rating: "4.5"
+            rating: 4.5
         },
     ],
 }
