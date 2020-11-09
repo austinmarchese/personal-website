@@ -119,7 +119,7 @@ const events = [
       },
       {
         eventTitle: "The start of Banter Audio",
-        eventDescription: "Co-found a tech company that's goal is to change how users experince podcasts. Stay tuned :)",
+        eventDescription: "Co-found a tech company that's goal is to change how users experience podcasts. Stay tuned :)",
         eventType: EXPERIENCE,
         eventThumbnail: require('./Banter_logo_dark.png'),
         eventDate: '2020-05-05',

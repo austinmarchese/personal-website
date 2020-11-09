@@ -38,6 +38,12 @@
                     Twitter
                   </b-button>
                 </b-button-group>
+                <b-button-group>
+                  <!--JamesThomson ANswer  https://forum.vuejs.org/t/how-to-download-a-file-stored-in-local-directory-using-vue-js/75973/5 -->
+                <b-button  onclick=" window.open('/assets/Austin Marchese Resume.pdf','_blank')" >
+                    Resume
+                  </b-button>
+                  </b-button-group>
               </b-button-group>
               <!-- <b-img thumbnail rounded="circle"  alt="Image 2"></b-img>                 -->
             </b-card-text>
@@ -93,7 +99,7 @@
     },
         data() {
       return {
-        mainProps: { width: 40, height: 40, class: 'm1' }
+        mainProps: { width: 30, height: 30, class: 'm1' }
       }
     },
     computed: {},
