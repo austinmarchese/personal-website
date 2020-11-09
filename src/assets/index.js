@@ -174,6 +174,10 @@ const skills = {
             rating: "4.5"
         },
         {
+            skill: "Angular",
+            rating: "4.5"
+        },
+        {
             skill: "React Native",
             rating: "4.5"
         },
@@ -202,6 +206,10 @@ const skills = {
         {
             skill: "Figma",
             rating: "4"
+        },
+        {
+            skill: "Redux",
+            rating: "3.5"
         },
         {
             skill: "Web Scraping",

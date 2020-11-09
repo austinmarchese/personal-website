@@ -6,8 +6,8 @@
 
     <WebsiteHeader/>
     <Profile  style="padding-top:200px" class="content" id="profile"/>
-    <SkillsCard/>
-    <Timeline id="experiences" class="content"/>
+    <SkillsCard id="abilities"/>
+    <Timeline id="timeline" class="content"/>
 
     
   </div>

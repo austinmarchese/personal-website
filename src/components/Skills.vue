@@ -4,7 +4,7 @@
             <b-list-group-item  variant="dark" v-for="skill in skills" :key="skill.skill"  class="d-flex justify-content-between align-items-center">
                 <h7 class="skill-text">{{skill.skill}} </h7>
                     <star-rating v-bind:increment="0.5" v-bind:max-rating="5" :rating="skill.rating" :read-only="true"
-                    inactive-color="#2c3e50" 
+                    inactive-color="#6c757d" 
                     active-color="#ff9900" 
                     :show-rating="false"
                     v-bind:star-size="20">

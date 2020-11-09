@@ -6,11 +6,8 @@
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
         <b-nav-item href="#profile">Profile</b-nav-item>
-        <b-nav-item href="#experiences">Experiences</b-nav-item>
-        <b-nav-item href="#profile">Abilities</b-nav-item>
-        <b-nav-item href="#profile">Projects</b-nav-item>
-        <b-nav-item href="#profile">Contacts</b-nav-item>
-        <b-nav-item href="#">Link</b-nav-item>
+        <b-nav-item href="#abilities">Abilities</b-nav-item>
+        <b-nav-item href="#timeline">Timeline</b-nav-item>
       </b-navbar-nav>
 
       <!-- Right aligned nav items -->
