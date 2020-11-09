@@ -22,11 +22,13 @@ import VueTimeline from "@growthbunker/vuetimeline";
 
 import VueWorldMap from 'vue-world-map';
 
+import "../src/assets/styling.css";
+
 Vue.use(VueWorldMap);
 
 Vue.use(VueTimeline, {
   // Specify the theme to use: dark or light (dark by default).
-  theme: "light",
+  theme: "dark",
 });
 
 

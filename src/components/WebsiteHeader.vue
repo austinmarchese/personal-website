@@ -4,7 +4,7 @@
   <p class="lead">Men of Action are Favored by the Goddes of Good Luck</p>
   <hr class="my-4">
   <p class="lead">
-    <b-button variant="primary" href="#profile">Explore</b-button>
+    <b-button variant="secondary" href="#profile">Explore</b-button>
   </p>
 </div>
 </template>

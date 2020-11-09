@@ -1,7 +1,8 @@
 <template>
   <div>
-    <CardFormat>
-      <b-card no-body class="overflow-hidden">
+    <CardFormat header="Timeline" 
+    quote="And I ain't gonna wait for nothing
+'Cause that just ain't my style..." author="Mac Miller">
         <div v-for="event in events" :key="event.eventTitle" class="timeline-wrapper">
           <vue-timeline-update v-if="event.eventThumbnail == ''" :date="new Date(event.eventDate)"
             :title="event.eventTitle" 
@@ -16,14 +17,13 @@
             :icon="event.eventType.icon"
             :color="event.eventType.color"/>
         </div>
-      </b-card>
     </CardFormat>
   </div>
 </template>
 
 <script>
 import CardFormat from './CardFormat.vue';
-import Events from '../assets/index'
+import PERSONAL_INFO from '../assets/index'
 export default {
   name: 'Timeline',
   components: {
@@ -32,7 +32,7 @@ export default {
 
   data() {
     return {
-      events: Events.reverse()
+      events: PERSONAL_INFO.Events.reverse()
     }
   },
   computed: {},

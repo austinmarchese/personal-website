@@ -1,0 +1,106 @@
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-attachment: fixed;
+      /* height: 90vh; */
+  }
+  .navbar .nav > li a {
+      display: block;
+      height: 80px;
+      text-align: center;
+      padding-top: 30px;
+      font-weight: 600;
+      color: #FFFFFF;
+  }
+  .bg-light {
+      background-color: #434242 !important;
+  }
+  html, body {
+      color: #434242;
+      font-family: 'Open Sans', sans-serif !important;
+      height: 100%;
+  }
+  .content {
+    padding-top:40px;
+    padding-bottom:40px;
+  }
+  
+  h4, h3 {
+      font-weight: 300;
+      color: #ff9900;
+  }
+  h2, h3 {
+    font-weight: 300;
+    color: #ff9900;
+}
+  
+.card-subtitle{
+    font-size:28px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+  h4 {
+      font-size: 54px;
+      text-align: center;
+  }
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong, b {
+      font-family: 'Open Sans', sans-serif !important;
+      margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 54px;
+    text-align: center;
+}
+
+  html, body {
+      color: #434242;
+      font-family: 'Open Sans', sans-serif !important;
+  }
+
+  .navbar .nav > li a {
+    display: block;
+    height: 80px;
+    text-align: center;
+    padding-top: 30px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #2c3e50 !important;
+}
+
+.list-group-item-dark{
+    background-color: #2c3e50;
+}
+
+.list-group-item {
+background-color: transparent;
+/* border-top: 1px solid #ddd; */
+border-radius: 0;
+color: #fff;
+}
+
+.thumbnail {
+    border: 0 none;
+    box-shadow: none;
+}
+
+.img-thumbnail {
+    padding: .25rem;
+    background-color: #6c757d !important;
+    border: 1px solid #6c757d !important;
+    border-radius: .25rem;
+    max-width: 100%;
+    height: auto;
+}

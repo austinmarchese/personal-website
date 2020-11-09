@@ -1,11 +1,12 @@
 <template>
 
   <div :style="{ 
-    backgroundImage: 'url(' + require('@/assets/SanDiego.jpg') + ')' }" id="app">
+    backgroundImage: 'url(' + require('@/assets/Altered_SD.png') + ')' }" id="app">
     <NavBar/>
 
     <WebsiteHeader/>
     <Profile  style="padding-top:200px" class="content" id="profile"/>
+    <SkillsCard/>
     <Timeline id="experiences" class="content"/>
 
     
@@ -17,6 +18,7 @@ import NavBar from './components/NavBar.vue';
 import WebsiteHeader from './components/WebsiteHeader.vue';
 import Profile from './components/Profile.vue';
 import Timeline from './components/Timeline.vue';
+import SkillsCard from './components/SkillsCard.vue';
 
 export default {
   name: 'App',
@@ -25,6 +27,7 @@ export default {
     WebsiteHeader,
     Profile,
     Timeline,
+    SkillsCard
   },
 };
 </script>
@@ -42,8 +45,43 @@ export default {
     background-attachment: fixed;
     /* height: 90vh; */
 }
+.navbar .nav > li a {
+    display: block;
+    height: 80px;
+    text-align: center;
+    padding-top: 30px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+.bg-light {
+    background-color: black !important;
+}
+html, body {
+    color: #434242;
+    font-family: 'Open Sans', sans-serif !important;
+    height: 100%;
+}
 .content {
   padding-top:40px;
   padding-bottom:40px;
+}
+
+h4, h3 {
+    font-weight: 300;
+    color: #22A39F;
+}
+
+h4 {
+    font-size: 54px;
+    text-align: center;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong, b {
+    font-family: 'Open Sans', sans-serif !important;
+    margin-bottom: 20px;
+}
+
+html, body {
+    color: #434242;
+    font-family: 'Open Sans', sans-serif !important;
 }
 </style>

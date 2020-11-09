@@ -1,6 +1,6 @@
 <template>
 <div>
-  <b-navbar  fixed='top' toggleable="lg" type="light" variant="light">
+  <b-navbar  type="dark" variant="dark" fixed='top' toggleable="lg">
     <b-navbar-brand style="font-family: 'Comic Sans MS', cursive, sans-serif;" href="#">A.M.</b-navbar-brand>
     
     <b-collapse id="nav-collapse" is-nav>
