@@ -23,7 +23,7 @@ export default {
 
 .header-container {
     padding-top: 110px;
-    padding-bottom: 500px;
+    /* padding-bottom: 500px; */
     margin:20px;
 }
 .header-text {

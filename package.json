@@ -19,7 +19,8 @@
     "vue-loader-v16": "^16.0.0-beta.5.4",
     "vue-star-rating": "^1.7.0",
     "vue-stars": "^1.2.2",
-    "vue-world-map": "^0.1.1"
+    "vue-world-map": "^0.1.1",
+    "world-map-vue": "^0.2.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.3.0",

@@ -5,6 +5,7 @@
     <NavBar/>
 
     <WebsiteHeader/>
+    <MusicComponent/>
     <Profile  style="padding-top:200px" class="content" id="profile"/>
     <SkillsCard style="padding-top:100px" id="abilities"/>
     <Timeline style="padding-top:100px"  id="timeline" class="content"/>
@@ -19,6 +20,7 @@ import WebsiteHeader from './components/WebsiteHeader.vue';
 import Profile from './components/Profile.vue';
 import Timeline from './components/Timeline.vue';
 import SkillsCard from './components/SkillsCard.vue';
+import MusicComponent from './components/MusicComponent.vue';
 
 export default {
   name: 'App',
@@ -27,7 +29,8 @@ export default {
     WebsiteHeader,
     Profile,
     Timeline,
-    SkillsCard
+    SkillsCard,
+    MusicComponent,
   },
 };
 </script>
@@ -40,10 +43,10 @@ export default {
   text-align: center;
   color: #2c3e50;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    /* height: 90vh; */
+    
 }
 .navbar .nav > li a {
     display: block;

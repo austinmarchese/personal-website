@@ -68,12 +68,7 @@
               <b-card-body sub-title="Location">
                 <b-card-text>
                   New York, New York
-                  <!-- <div id="color-map" style="height: 300px;"></div> -->
-                  <!-- <world-map :countryData="{
-  US: 100,
-  CA: 120,
-  UK: 400,
-}" /> -->
+
                 </b-card-text>
 
               </b-card-body>
@@ -82,6 +77,13 @@
           </b-card-body>
         </b-col>
       </b-row>
+      <!-- <b-row no-gutters>
+             <world-map :countryData="{
+  US: 100,
+  CA: 120,
+  UK: 400,
+}" />
+      </b-row> -->
     </CardFormat>
   </div>
 </template>

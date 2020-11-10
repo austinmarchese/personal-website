@@ -26,6 +26,14 @@ import "../src/assets/styling.css";
 
 Vue.use(VueWorldMap);
 
+
+import WorldMapVue from 'world-map-vue';
+
+Vue.use(WorldMapVue);
+
+import { EmbedPlugin } from 'bootstrap-vue'
+Vue.use(EmbedPlugin)
+
 Vue.use(VueTimeline, {
   // Specify the theme to use: dark or light (dark by default).
   theme: "dark",
