@@ -22,7 +22,7 @@ import VueTimeline from "@growthbunker/vuetimeline";
 
 import VueWorldMap from 'vue-world-map';
 
-import "../src/assets/styling.css";
+import "../src/assets/styling.scss";
 
 Vue.use(VueWorldMap);
 

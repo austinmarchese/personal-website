@@ -1,7 +1,9 @@
 <template>
 
-  <div :style="{ 
-    backgroundImage: 'url(' + require('@/assets/Altered_SD.png') + ')' }" id="app">
+<div id="app"
+:style="{ 
+    backgroundImage: 'url(' + require('@/assets/Altered_SD.png') + ')' }" 
+     class="hero">
     <NavBar/>
 
     <WebsiteHeader/>
