@@ -43,5 +43,6 @@ Vue.use(VueTimeline, {
 
 // createApp(App).$mount('#app');
 new Vue({
+    el: '#app',
     render: (h) => h(App),
-  }).$mount('#app');
+  })

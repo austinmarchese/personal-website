@@ -46,20 +46,20 @@ export default {
   metaInfo() {
     return {
 
-      title: 'Banter',
+      title: 'Welcome to My Webpage!',
       meta: [
         // Twitter Card
-        { name: 'twitter:card', content: 'Banter' },
-        { name: 'twitter:title', content: 'Welcome to Banter' },
-        { name: 'twitter:description', content: 'The new way to listen to sports talk' },
+        { name: 'twitter:card', content: 'Austin Marchese' },
+        { name: 'twitter:title', content: 'Welcome to my Website!' },
+        { name: 'twitter:description', content: 'The World is Changing. And so should your Resume.' },
         // image must be an absolute path
         { name: 'twitter:image', content: this.logo },
         // Facebook OpenGraph
-        { property: 'og:title', content: 'Welcome to Banter' },
-        { property: 'og:site_name', content: 'Banter' },
+        { property: 'og:title', content: 'Welcome to my Website!' },
+        { property: 'og:site_name', content: 'My Personal Website' },
         { property: 'og:type', content: 'website' },
         { property: 'og:image', content: this.logo },
-        { property: 'og:description', content: 'The new way to listen to sports talk.' },
+        { property: 'og:description', content: 'The World is Changing. And so should your Resume' },
       ],
     };
   },
