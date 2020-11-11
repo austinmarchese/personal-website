@@ -25,8 +25,8 @@ import VueWorldMap from 'vue-world-map';
 import "../src/assets/styling.scss";
 
 Vue.use(VueWorldMap);
-import Meta from 'vue-meta';
-Vue.use(Meta);
+
+
 
 import WorldMapVue from 'world-map-vue';
 
@@ -40,9 +40,8 @@ Vue.use(VueTimeline, {
   theme: "dark",
 });
 
-
-// createApp(App).$mount('#app');
+import Meta from 'vue-meta';
+Vue.use(Meta);
 new Vue({
-    el: '#app',
-    render: (h) => h(App),
-  })
+  render: h => h(App),
+}).$mount('#app')

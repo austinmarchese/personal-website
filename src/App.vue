@@ -46,6 +46,7 @@ export default {
   metaInfo() {
     return {
 
+// In your Netlify account, go to Site settings -> Build & Deploy -> Prerendering ...This will allow you to pre render on twitter!
       title: 'Welcome to My Webpage!',
       meta: [
         // Twitter Card
