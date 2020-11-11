@@ -25,7 +25,8 @@ import VueWorldMap from 'vue-world-map';
 import "../src/assets/styling.scss";
 
 Vue.use(VueWorldMap);
-
+import Meta from 'vue-meta';
+Vue.use(Meta);
 
 import WorldMapVue from 'world-map-vue';
 
