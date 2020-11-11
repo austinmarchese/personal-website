@@ -48,21 +48,21 @@ export default {
 
 // In your Netlify account, go to Site settings -> Build & Deploy -> Prerendering ...This will allow you to pre render on twitter!
 // Potentially may have to go on Netlify and deploy---> click clear cache --> deploy site
-      title: 'Welcome to My Webpage!',
+      // title: 'Welcome to My Webpage!',
       meta: [
-        // Twitter Card
-        { name: 'twitter:card', content: 'Austin Marchese' },
-        { name: 'twitter:title', content: 'Welcome to my Website!' },
-        { name: 'twitter:description', content: 'The World is Changing. And so should your Resume.' },
-        // image must be an absolute path
-        { name: 'twitter:image', content: this.logo },
-        // Facebook OpenGraph
-        { name:"title", property: 'og:title', content: 'Welcome to my Website!' },
-        {  property: 'og:site_name', content: 'My Personal Website' },
-        {  property: 'og:type', content: 'website' },
-        { name:"image", property: 'og:image', content: this.logo },
-        { name:"description", property: 'og:description', content: 'The World is Changing. And so should your Resume' },
-      ],
+          // Twitter Card
+          {name: 'twitter:card', content: 'summary'},
+          {name: 'twitter:title', content: 'Vue Social Cards Example'},
+          {name: 'twitter:description', content: 'Vue sample site showing off Twitter and Facebook Cards.'},
+          // image must be an absolute path
+          {name: 'twitter:image', content: this.logo},
+          // Facebook OpenGraph
+          {property: 'og:title', content: 'Vue Social Cards Example'},
+          {property: 'og:site_name', content: 'Vue Example'},
+          {property: 'og:type', content: 'website'},
+          {property: 'og:image', content:  this.logo},
+          {property: 'og:description', content: 'Vue sample site showing off Twitter and Facebook Cards.'}
+      ]
     };
   },
 };
