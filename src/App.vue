@@ -47,6 +47,7 @@ export default {
     return {
 
 // In your Netlify account, go to Site settings -> Build & Deploy -> Prerendering ...This will allow you to pre render on twitter!
+// Potentially may have to go on Netlify and deploy---> click clear cache --> deploy site
       title: 'Welcome to My Webpage!',
       meta: [
         // Twitter Card
@@ -56,11 +57,11 @@ export default {
         // image must be an absolute path
         { name: 'twitter:image', content: this.logo },
         // Facebook OpenGraph
-        { property: 'og:title', content: 'Welcome to my Website!' },
-        { property: 'og:site_name', content: 'My Personal Website' },
-        { property: 'og:type', content: 'website' },
-        { property: 'og:image', content: this.logo },
-        { property: 'og:description', content: 'The World is Changing. And so should your Resume' },
+        { name:"title", property: 'og:title', content: 'Welcome to my Website!' },
+        {  property: 'og:site_name', content: 'My Personal Website' },
+        {  property: 'og:type', content: 'website' },
+        { name:"image", property: 'og:image', content: this.logo },
+        { name:"description", property: 'og:description', content: 'The World is Changing. And so should your Resume' },
       ],
     };
   },
