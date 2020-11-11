@@ -40,8 +40,8 @@ Vue.use(VueTimeline, {
   theme: "dark",
 });
 
-import Meta from 'vue-meta';
-Vue.use(Meta);
+// import Meta from 'vue-meta';
+// Vue.use(Meta);
 new Vue({
   render: h => h(App),
 }).$mount('#app')
