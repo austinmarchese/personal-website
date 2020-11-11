@@ -1,8 +1,10 @@
 <template>
 
+<!-- Optimizing background image performance -->
+<!-- https://medium.com/vehikl-news/fixed-background-image-performance-issue-6b7d9e2dbc55 -->
 <div id="app"
 :style="{ 
-    backgroundImage: 'url(' + require('@/assets/Altered_SD.png') + ')' }" 
+    backgroundImage: 'url(' + require('@/assets/Altered_SD_small.png') + ')' }" 
      class="hero">
     <NavBar/>
 
