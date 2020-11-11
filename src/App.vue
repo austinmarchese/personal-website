@@ -28,6 +28,33 @@ import MusicComponent from './components/MusicComponent.vue';
 
 export default {
   name: 'App',
+  metaInfo: {
+    title: 'Default App Title',
+    titleTemplate: '%s | vue-meta Example App',
+    htmlAttrs: {
+      reptilian: 'gator'
+    },
+    headAttrs: {
+      nest: 'eggs'
+    },
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'description', content: 'gator' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+                // Twitter Card
+          {name: 'twitter:card', content: 'summary'},
+          {name: 'twitter:title', content: 'Vue Social Cards Example'},
+          {name: 'twitter:description', content: 'Vue sample site showing off Twitter and Facebook Cards.'},
+          // image must be an absolute path
+          {name: 'twitter:image', content: this.logo},
+          // Facebook OpenGraph
+          {property: 'og:title', content: 'Vue Social Cards Example'},
+          {property: 'og:site_name', content: 'Vue Example'},
+          {property: 'og:type', content: 'website'},
+          {property: 'og:image', content:  this.logo},
+          {property: 'og:description', content: 'Vue sample site showing off Twitter and Facebook Cards.'}
+    ]
+  },
   components: {
     NavBar,
     WebsiteHeader,
@@ -43,35 +70,35 @@ export default {
     };
   },
 
-  metaInfo() {
-    return {
+//   metaInfo() {
+//     return {
 
-// In your Netlify account, go to Site settings -> Build & Deploy -> Prerendering ...This will allow you to pre render on twitter!
-// Potentially may have to go on Netlify and deploy---> click clear cache --> deploy site
-// Twitter Validator: https://cards-dev.twitter.com/validator
-// LinkedIn Validator: https://www.linkedin.com/post-inspector/inspect/https:%2F%2Faustinmarchese.co%2F
-// Facebook Validator: https://developers.facebook.com/tools/debug/
-      title: 'Welcome to My Webpage!',
-      htmlAttrs: {
-        lang: 'en',
-        amp: true
-      },
-      meta: [
-          // Twitter Card
-          {name: 'twitter:card', content: 'summary'},
-          {name: 'twitter:title', content: 'Vue Social Cards Example'},
-          {name: 'twitter:description', content: 'Vue sample site showing off Twitter and Facebook Cards.'},
-          // image must be an absolute path
-          {name: 'twitter:image', content: this.logo},
-          // Facebook OpenGraph
-          {property: 'og:title', content: 'Vue Social Cards Example'},
-          {property: 'og:site_name', content: 'Vue Example'},
-          {property: 'og:type', content: 'website'},
-          {property: 'og:image', content:  this.logo},
-          {property: 'og:description', content: 'Vue sample site showing off Twitter and Facebook Cards.'}
-      ]
-    };
-  },
+// // In your Netlify account, go to Site settings -> Build & Deploy -> Prerendering ...This will allow you to pre render on twitter!
+// // Potentially may have to go on Netlify and deploy---> click clear cache --> deploy site
+// // Twitter Validator: https://cards-dev.twitter.com/validator
+// // LinkedIn Validator: https://www.linkedin.com/post-inspector/inspect/https:%2F%2Faustinmarchese.co%2F
+// // Facebook Validator: https://developers.facebook.com/tools/debug/
+//       title: 'Welcome to My Webpage!',
+//       htmlAttrs: {
+//         lang: 'en',
+//         amp: true
+//       },
+//       meta: [
+//           // Twitter Card
+//           {name: 'twitter:card', content: 'summary'},
+//           {name: 'twitter:title', content: 'Vue Social Cards Example'},
+//           {name: 'twitter:description', content: 'Vue sample site showing off Twitter and Facebook Cards.'},
+//           // image must be an absolute path
+//           {name: 'twitter:image', content: this.logo},
+//           // Facebook OpenGraph
+//           {property: 'og:title', content: 'Vue Social Cards Example'},
+//           {property: 'og:site_name', content: 'Vue Example'},
+//           {property: 'og:type', content: 'website'},
+//           {property: 'og:image', content:  this.logo},
+//           {property: 'og:description', content: 'Vue sample site showing off Twitter and Facebook Cards.'}
+//       ]
+//     };
+//   },
 };
 </script>
 
