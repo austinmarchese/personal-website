@@ -48,7 +48,14 @@ export default {
 
 // In your Netlify account, go to Site settings -> Build & Deploy -> Prerendering ...This will allow you to pre render on twitter!
 // Potentially may have to go on Netlify and deploy---> click clear cache --> deploy site
-      // title: 'Welcome to My Webpage!',
+// Twitter Validator: https://cards-dev.twitter.com/validator
+// LinkedIn Validator: https://www.linkedin.com/post-inspector/inspect/https:%2F%2Faustinmarchese.co%2F
+// Facebook Validator: https://developers.facebook.com/tools/debug/
+      title: 'Welcome to My Webpage!',
+      htmlAttrs: {
+        lang: 'en',
+        amp: true
+      },
       meta: [
           // Twitter Card
           {name: 'twitter:card', content: 'summary'},
