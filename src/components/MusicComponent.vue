@@ -1,10 +1,13 @@
 <template>
 <div class="music-container">
-          <b-embed
+    <b-card no-body bg-variant="dark" text-variant="white" class="overflow-hidden">
+        <b-embed
     type="iframe"
     aspect="16by9"
     src="https://www.youtube.com/embed/AbV-Q6tz4B8?start=5"
   ></b-embed>
+    </b-card>
+          
 </div>
 </template>
 
