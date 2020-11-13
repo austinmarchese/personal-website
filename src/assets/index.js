@@ -216,7 +216,7 @@ const skills = {
             rating: 4.5
         },
         {
-            skill: "Navigating the Crypto World",
+            skill: "Cryptocurrencies",
             rating: 4.5
         },
     ],
