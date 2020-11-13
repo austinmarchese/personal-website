@@ -40,6 +40,8 @@ Vue.use(VueTimeline, {
   theme: "dark",
 });
 
+// FIXME  Manually putting in Meta Tags above styling in index.html. THIS WORKS, limits flexability
+// But gets the job done for personal website
 // import Meta from 'vue-meta';
 // Vue.use(Meta);
 new Vue({
