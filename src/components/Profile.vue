@@ -6,8 +6,7 @@
           <b-card-body style="font-size: 28px;" sub-title="About Me">
             <b-card-text>
               I'm a passionate developer who knows how to establish a
-              collaborative and fun work environment that leads to
-              consistent high quality work.
+              collaborative and fun work environment. A true leader is someone that can inspire and empower others, and that is something I strive to do every day. 
             </b-card-text>
           </b-card-body>
           <b-card-body>
@@ -67,8 +66,7 @@
               </b-card-body>
               <b-card-body sub-title="Location">
                 <b-card-text>
-                  New York, New York
-
+                  San Diego, California....For now
                 </b-card-text>
 
               </b-card-body>
