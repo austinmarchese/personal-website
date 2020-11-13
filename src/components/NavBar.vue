@@ -13,8 +13,8 @@
       <!-- Right aligned nav items -->
     </b-collapse>
           <b-navbar-nav class="ml-auto">
-        <b-nav-item href="#" disabled>
-          <b-img v-bind="this.mainProps" class="bitcoinPrice"    :src="require('../assets/btcLogo.svg')" rounded="circle" alt="Circle image"></b-img>
+        <b-nav-item href="#" disabled class="bitcoinPrice">
+          <b-img v-bind="this.mainProps" :src="require('../assets/btcLogo.svg')" rounded="circle" alt="Circle image"></b-img>
           ${{this.btcPrice}} USD</b-nav-item>
       </b-navbar-nav>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -59,8 +59,10 @@ export default {
 .banter-nav-bar {
   flex-grow: 0;
 }
-
+    
 .bitcoinPrice{
+  background: #2c3e50;
+    border-radius: 45px;
   font-weight: 400;
 }
 .desktop-nav {
