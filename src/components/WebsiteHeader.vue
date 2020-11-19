@@ -1,7 +1,7 @@
 <template>
 <div class="header-container">
   <h1 class="display-4">Welcome...</h1>
-  <p class="lead">Men of Action are Favored by the Goddess of Good Luck</p>
+  <p class="lead">People of Action are Favored by the Goddess of Good Luck</p>
   <hr class="my-4">
   <p class="lead">
     <b-button variant="secondary" href="#profile">Explore</b-button>
