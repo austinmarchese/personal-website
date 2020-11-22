@@ -26,7 +26,7 @@
                   </b-button>
                 </b-button-group>
                 <b-button-group>
-                  <b-button onclick=" window.open('https://medium.com/@amarchese3','_blank')">
+                  <b-button onclick=" window.open('https://austinmarchese.medium.com/','_blank')">
                     <b-img v-bind="mainProps" thumbnail :src="require('../assets/medium_black.svg')" alt="Image 2">
                     </b-img>
                     Medium
