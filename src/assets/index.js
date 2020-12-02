@@ -222,9 +222,107 @@ const skills = {
     ],
 }
 
+const locations = [
+  {
+    image: require('./SanDiego.jpg'),
+    location: 'United States',
+    details: 'DETAILS',
+    countryCode: 'US',
+    countryColor: 1,
+  },
+  {
+    image: require('./Mexico.png'),
+    location: 'Mexico',
+    details: 'Cancun',
+    countryCode: 'MX',
+    countryColor: 1,
+  },
+  {
+    image: require('./Canada.png'),
+    location: 'Canada',
+    details: 'DETAILS',
+    countryCode: 'CA',
+    countryColor: 1,
+  },
+  {
+    image: require('./Prague.png'),
+    location: 'Czech Republic',
+    details: 'Prague',
+    countryCode: 'CZ',
+    countryColor: 1,
+  },
+
+  {
+    image: require('./Budapest.png'),
+    location: 'Hungary',
+    details: 'Budapest',
+    countryCode: 'HU',
+    countryColor: 1,
+  },
+  {
+    image: require('./Vienna.png'),
+    location: 'Austria',
+    details: 'Vienna',
+    countryCode: 'AT',
+    countryColor: 1,
+  },
+  {
+    image: require('./Spain.png'),
+    location: 'Spain',
+    details: 'DETAILS',
+    countryCode: 'ES',
+    countryColor: 1,
+  },
+
+  {
+  image: require('./Florence.png'),
+  location: 'Italy',
+  details: 'Florence',
+  countryCode: 'IT',
+  countryColor: 1,
+},
+{
+  image: require('./Germany.png'),
+  location: 'Germany',
+  details: 'DETAILS',
+  countryCode: 'DE',
+  countryColor: 1,
+},
+{
+  image: require('./Portugal.png'),
+  location: 'Portugal',
+  details: 'Portugal',
+  countryCode: 'PT',
+  countryColor: 1,
+},
+
+{
+  image: require('./Amsterdam.png'),
+  location: 'Amsterdam',
+  details: 'DETAILS',
+  countryCode: 'AW',
+  countryColor: 1,
+},
+{
+  image: require('./Switzerland.png'),
+  location: 'Switzerland',
+  details: 'DETAILS',
+  countryCode: 'CH',
+  countryColor: 1,
+},
+{
+  image: require('./France.png'),
+  location: 'France',
+  details: 'DETAILS',
+  countryCode: 'FR',
+  countryColor: 1,
+},
+]
+
 const PERSONAL_INFO = {
     Skills : skills,
     Events: events,
+    Locations: locations,
 
 }
 

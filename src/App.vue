@@ -7,11 +7,13 @@
     backgroundImage: 'url(' + require('@/assets/Altered_SD_new.png') + ')' }" 
      class="hero">
     <NavBar/>
-
     <WebsiteHeader/>
     <MusicComponent/>
+    
+    <EmailListForm/>
     <Profile  style="padding-top:200px" class="content" id="profile"/>
-    <SkillsCard style="padding-top:100px" id="abilities"/>
+    <ImageCarousel style="padding-top:100px" class="content" id="profile"/>
+    <!-- <SkillsCard style="padding-top:100px" id="abilities"/> -->
     <Timeline style="padding-top:100px"  id="timeline" class="content"/>
 
     
@@ -23,8 +25,11 @@ import NavBar from './components/NavBar.vue';
 import WebsiteHeader from './components/WebsiteHeader.vue';
 import Profile from './components/Profile.vue';
 import Timeline from './components/Timeline.vue';
-import SkillsCard from './components/SkillsCard.vue';
+// import SkillsCard from './components/SkillsCard.vue';
 import MusicComponent from './components/MusicComponent.vue';
+import EmailListForm from './components/EmailListForm.vue';
+import ImageCarousel from './components/ImageCarousel.vue';
+
 
 export default {
   name: 'App',
@@ -33,8 +38,10 @@ export default {
     WebsiteHeader,
     Profile,
     Timeline,
-    SkillsCard,
+    // SkillsCard,
     MusicComponent,
+    EmailListForm,
+    ImageCarousel,
   },
     data() {
     return {
