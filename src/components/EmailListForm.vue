@@ -1,6 +1,12 @@
 <template>
     <div class="w-full max-w-xl">
-        <CardFormat header="Intersted in your own site?" :quote="this.displayMessage" author="Austin">
+        <div v-if="!isButtonClicked">
+            <b-button v-on:click="handleClick()">
+                <p class="card-title" style="margin:auto; color: #ff9900; font-size:22px">Intersted in your own site? Click to find out more</p>
+                </b-button>
+        </div>
+        <div v-else>
+        <CardFormat header="" :quote="this.displayMessage" author="Austin">
         <div v-if="isFormDisplayed">
             <form  name="contact-form" method="POST"
                 data-netlify="true" data-netlify-honeypot="bot-field" @submit.prevent="handleSubmit">
@@ -18,22 +24,18 @@
                         type="text" placeholder="Satoshi Nakamoto" data-hj-whitelist>
                 </div>
                 <div class="flex items-center justify-between">
-                    <button :disabled="!canSubmit" :class="
+                    <b-button :disabled="!canSubmit" :class="
             `${!canSubmit &&
-              'opacity-30 cursor-not-allowed'} bg-blue-500 hover:bg-blue-700  font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full`
+              'opacity-90 cursor-not-allowed'} bg-blue-500 hover:bg-blue-700  font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full`
           " type="submit">
                         Submit
-                    </button>
+                    </b-button>
                 </div>
             </form>
         </div>
-        <!-- <div v-else>
-                    <p class="lead">
-{{this.displayMessage}}
-                    </p>
-        </div> -->
+        </CardFormat>            
+        </div>
 
-        </CardFormat>
     </div>
 </template>
 <script>
@@ -49,6 +51,7 @@ import CardFormat from './CardFormat.vue';
       
         data() {
             return {
+                isButtonClicked: false,
                 isFormDisplayed: true,
                 email: '',
                 name: '',
@@ -69,6 +72,11 @@ import CardFormat from './CardFormat.vue';
                     )
                     .join("&");
             },
+            handleClick() {
+                console.log("CLick")
+                this.isButtonClicked = true
+            },
+
             handleSubmit() {
                 const axiosConfig = {
                     header: {
@@ -100,6 +108,7 @@ import CardFormat from './CardFormat.vue';
     }
 </script>
 <style>
+
     .subtitle {
 
         font-size: "40px" !important

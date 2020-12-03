@@ -57,6 +57,7 @@ export default {
 .content-container {
 }
 
+
 .btn-primary {
     color: #fff;
     background-color: red;
