@@ -1,215 +1,98 @@
 <template>
-  <div class="question-form">
-    <!-- <notification-container
-      :status="status"
-    /> -->
-    <form method="post" name="test-speaker" netlify netlify-honeypot="bot-field" hidden>
-      <input type="hidden" name="form-name" value="ask-question" />
-      <ul>
-      <li>
+  <div class="w-full max-w-xl">
+    <h1 class="subtitle">
+      Contact Us
+    </h1>
+    <!-- TODO: Better Success handling -->
+    <form
+      class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+      name="contact-form"
+      method="POST"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+    >
+      <input type="hidden" name="form-name" value="contact-form">
+      <p class="hidden">
         <label>
-          Your Name:
-          <input
-            type="text"
-            name="name"
-            @input="ev => form.name = ev.target.value"
-            >
+          Don't fill this out if you're human:
+          <input name="bot-field">
         </label>
-      </li>
-      <li>
-        <label>
-          Your Question:
-          <textarea
-             ref="input"
-             name="question"
-             @input="ev => form.question = ev.target.value"
-             placeholder="Question Goes Here"
-          />
-        </label>
-      </li>
-      </ul>
-      <button v-on:click="handleSubmit()"  type="submit" class="submit-button" >Ask a question</button>
+      </p>
+      <div class="mb-4">
+        <label
+          class="block text-gray-700 text-xl font-bold mb-2"
+          for="email"
+        >Email</label>
+        <input
+          id="email"
+          v-model="email"
+          name="email"
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          type="email"
+          placeholder="satoshi@nakamoto.com"
+          data-hj-whitelist
+        >
+      </div>
+      <div class="mb-4">
+        <label
+          class="block text-gray-700 text-xl font-bold mb-2"
+          for="name"
+        >Name</label>
+        <input
+          id="name"
+          v-model="name"
+          name="name"
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          type="text"
+          placeholder="Satoshi Nakamoto"
+          data-hj-whitelist
+        >
+      </div>
+      <label class="block mb-2">
+        <label
+          class="block text-gray-700 text-xl font-bold mb-2"
+          for="message"
+        >Message</label>
+        <textarea
+          id="message"
+          v-model="message"
+          name="message"
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline form-textarea mt-1 block w-full"
+          rows="3"
+          placeholder="Enter your message here..."
+          data-hj-whitelist
+        />
+      </label>
+      <div class="flex items-center justify-between">
+        <button
+          :disabled="!canSubmit"
+          :class="
+            `${!canSubmit &&
+              'opacity-50 cursor-not-allowed'} bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full`
+          "
+          type="submit"
+        >
+          Submit
+        </button>
+      </div>
     </form>
   </div>
 </template>
-
 <script>
-// import NotificationContainer from "./NotificationContainer.vue";
 export default {
-  name: "question-form",
-  components: {
-    // NotificationContainer
-  },
-  data() {
+  name: 'EmailListForm',
+  data () {
     return {
-      panelists: ["Chris Fritz", "Evan You", "Both"],
-      form: {
-        askPerson: "Chris Fritz",
-        name: "",
-        question: ""
-      },
-      sent: false,
-      status: {}
-    };
+      email: '',
+      name: '',
+      message: ''
+    }
   },
-  methods: {
-    ifEvan(person) {
-      return person === "Evan You" || person === "Both";
-    },
-    removeNotification() {
-      this.sent = false;
-    },
-    encode(data) {
-      return Object.keys(data)
-        .map(
-          key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
-        )
-        .join("&");
-    },
-    handleSubmit(e) {
-        console.log(e)
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: this.encode({
-          "form-name": "ask-question",
-          ...this.form
-        })
-      })
-        .then(() => {
-            console.log("Success")
-        //   this.$router.push("thanks");
-        })
-        .catch(() => {
-            console.log("Fail")
-        //   this.$router.push("404");
-        });
+  computed: {
+    canSubmit () {
+      return !!(this.email && this.name && this.message)
     }
   }
-};
+}
 </script>
-
-<style lang="scss">
-body {
-  text-align: left;
-}
-li {
-  margin-bottom: 1em;
-}
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-p,
-label {
-  color: #64b587;
-  font-weight: bold;
-}
-.pick-panelist {
-  display: block;
-  position: relative;
-  color: rgba(14, 30, 37, 0.54);
-  font-weight: 300;
-  font-size: 1.35em;
-  padding: 10px 10px 10px 30px;
-  margin: 10px auto;
-  height: 30px;
-  z-index: 9;
-  cursor: pointer;
-  -webkit-transition: all 0.25s linear;
-  &.disabled {
-    opacity: 0.5;
-  }
-  &:before {
-    content: "";
-    display: inline-block;
-    border: 5px solid #64b587;
-    border-radius: 100%;
-    height: 25px;
-    width: 25px;
-    top: 30px;
-    left: 20px;
-    z-index: 5;
-    transition: border 0.25s linear;
-    -webkit-transition: border 0.25s linear;
-    + .checked {
-      background: red;
-    }
-  }
-}
-.checked {
-  &:before {
-    background: white;
-  }
-  &:after {
-    content: "";
-    display: block;
-    background: #64b587;
-    border-radius: 100%;
-    height: 15px;
-    width: 15px;
-    top: 20px;
-    left: 40px;
-    z-index: 5;
-    transition: border 0.25s linear;
-    -webkit-transition: border 0.25s linear;
-    position: absolute;
-  }
-}
-.question-form {
-  position: relative;
-}
-form {
-  background: rgb(248, 248, 248);
-  padding: 3em;
-  background: #fff;
-  color: rgba(14, 30, 37, 0.54);
-  border-radius: 8px;
-  -webkit-box-shadow: 0 1px 6px 0 rgba(14, 30, 37, 0.12);
-  box-shadow: 0 1px 6px 0 rgba(14, 30, 37, 0.12);
-}
-input[type="radio"] {
-  position: absolute;
-  opacity: 0;
-}
-input[type="text"],
-textarea {
-  box-sizing: border-box;
-  display: block;
-  width: 100%;
-  height: 40px;
-  margin: 0;
-  padding: 6px 14px;
-  border: 2px solid #e9ebeb;
-  border-radius: 4px;
-  background: 0 0;
-  color: #0e1e25;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-}
-textarea {
-  height: 200px;
-}
-span {
-  margin-left: 15px;
-  vertical-align: top;
-}
-.submit-button {
-  width: 100%;
-  padding: 20px 60px;
-  outline: none;
-  background-color: #64b587;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0 9px #95a5a6;
-  font-size: 1.2em;
-  color: white;
-  &:hover {
-    cursor: pointer;
-  }
-}
-</style>
+<style></style>
