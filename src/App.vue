@@ -46,7 +46,7 @@ export default {
     data() {
     return {
       // eslint-disable-next-line global-require
-      logo: window.location.origin + require('./assets/Altered_SD_small.png'),
+      logo: window.location.origin + require('./assets/Prague.png'),
     };
   },
 
