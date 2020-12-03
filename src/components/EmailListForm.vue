@@ -10,6 +10,7 @@
       method="POST"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
+       @submit.prevent="handleSubmit"
     >
     <input type="hidden" name="form-name" value="contact-form" />
       <div class="mb-4">
@@ -58,20 +59,47 @@
   </div>
 </template>
 <script>
+import axios from "axios"
+
 export default {
   name: 'EmailListForm',
   data () {
     return {
       email: '',
       name: '',
-      message: ''
     }
   },
   computed: {
     canSubmit () {
       return !!(this.email && this.name)
     }
+  },
+
+ methods: {
+    encode (data) {
+      return Object.keys(data)
+        .map(
+          key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+        )
+        .join("&");
+    },
+    handleSubmit () {
+      const axiosConfig = {
+        header: { "Content-Type": "application/x-www-form-urlencoded" }
+      };
+      console.log("Ye")
+      axios.post(
+        "/",
+        this.encode({
+          "form-name": "contact-form",
+          "email": this.email,
+          "name": this.name,
+        }),
+        axiosConfig
+      );
+    }
   }
+
 }
 </script>
 <style></style>
