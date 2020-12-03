@@ -2,8 +2,8 @@
     <div>
         <CardFormat header="Explore" quote="The biggest adventure you can take is to live the life of your dreams." author="Oprah">
             <b-row no-gutters>
-                <b-col md="8" offset-md="2">
-                    <b-carousel id="carousel-1" v-model="slide" :interval="2000" controls indicators
+                <b-col md="6" offset-md="3">
+                    <b-carousel id="carousel-1" v-model="slide" :interval="1600" controls indicators
                         style="text-shadow: 0px 0px 2px #000" fade img-width="1024" img-height="480"
                         @sliding-start="onSlideStart" @sliding-end="onSlideEnd">
                         <b-carousel-slide v-for="location in locations" :key="location.location"
@@ -12,7 +12,7 @@
                 </b-col>
             </b-row>
             <b-row no-gutters style="padding:20px">
-                <b-col md="6" offset-md="3">
+                <b-col md="4" offset-md="4">
                     <world-map :countryData="this.countryData" />
                 </b-col>
             </b-row>

@@ -34,7 +34,7 @@ const events = [
         eventDate: '1996-07-16',
       },
       {
-        eventTitle: "Attended Northport High School (NHS)",
+        eventTitle: "Attended Northport High School",
         eventDescription: "",
         eventType: EXPERIENCE,
         eventThumbnail: "",
@@ -42,14 +42,14 @@ const events = [
       },
       {
         eventTitle: "Cut from Basketball",
-        eventDescription: "Cut from NHS JV Basketball team",
+        eventDescription: "Cut from JV Basketball team",
         eventType: FAILURE,
         eventThumbnail: "",
         eventDate: '2011-01-05',
       },
       {
         eventTitle: "Long Island Basketball Champion",
-        eventDescription: "Top Highschool Basketball team on Long Island, awarded top Male Athlete at NHS",
+        eventDescription: "Top Highschool Basketball team on Long Island, awarded top Male Athlete at High School",
         eventType: ACCOMPLISHMENT,
         eventThumbnail: require('./northport_highschool.jpg'),
         eventDate: '2014-01-05',
@@ -62,6 +62,13 @@ const events = [
         eventDate: '2014-09-05',
       },
       {
+        eventTitle: "Cut from Basketball",
+        eventDescription: "Cut from College Basketball team, an end of a career... time to start the next ¯|_(ツ)_/¯",
+        eventType: FAILURE,
+        eventThumbnail: "",
+        eventDate: '2016-01-01',
+      },
+      {
         eventTitle: "Europe Part 1",
         eventDescription: "21 Day backpacking trip accross Europe",
         eventType: Travel,
@@ -70,14 +77,14 @@ const events = [
       },
       {
         eventTitle: "Graduate with a 4.0",
-        eventDescription: "Graduated from SIT with a 4.0 in Mechanical Engineering",
+        eventDescription: "Graduated with a 4.0 in Mechanical Engineering",
         eventType: ACCOMPLISHMENT,
         eventThumbnail: "",
         eventDate: '2018-05-05',
       },
       {
         eventTitle: "Denied Valedictorian",
-        eventDescription: "Denied Valedictorian award because of a late grade change and SIT telling me that they already 'Printed the Pamphlets' for Graduation",
+        eventDescription: "Denied Valedictorian award because of a late grade change and the School told me that they already 'Printed the Pamphlets' for Graduation",
         eventType: FAILURE,
         eventThumbnail: "",
         eventDate: '2018-05-05',
@@ -93,7 +100,7 @@ const events = [
         eventTitle: "Denied by Harvard Business School",
         eventDescription: "1 of 200 finalists to get interviewed for a 2 year differred MBA program, denied because I 'lacked passion and career direction' as a 22 year old",
         eventType: FAILURE,
-        eventThumbnail: "",
+        eventThumbnail: require('./harvard.png'),
         eventDate: '2018-06-05',
       },
       {
@@ -111,11 +118,11 @@ const events = [
         eventDate: '2019-07-05',
       },
       {
-        eventTitle: "Top Technology Analyst",
-        eventDescription: "Recognized as top performing Technology Analyst in the Coprorate Technology Org at JPM",
-        eventType: ACCOMPLISHMENT,
+        eventTitle: "Europe Part 3",
+        eventDescription: "3rd times the charm.",
+        eventType: Travel,
         eventThumbnail: "",
-        eventDate: '2020-01-05',
+        eventDate: '2019-11-06',
       },
       {
         eventTitle: "The start of Banter Audio",

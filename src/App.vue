@@ -12,7 +12,7 @@
     
     <EmailListForm/>
     <Profile  style="padding-top:200px" class="content" id="profile"/>
-    <ImageCarousel style="padding-top:100px" class="content" id="profile"/>
+    <ImageCarousel style="padding-top:100px" class="content" id="explore"/>
     <!-- <SkillsCard style="padding-top:100px" id="abilities"/> -->
     <Timeline style="padding-top:100px"  id="timeline" class="content"/>
 

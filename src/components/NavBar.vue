@@ -6,7 +6,7 @@
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
         <b-nav-item href="#profile">Profile</b-nav-item>
-        <b-nav-item href="#abilities">Abilities</b-nav-item>
+        <b-nav-item href="#explore">Explore</b-nav-item>
         <b-nav-item href="#timeline">Timeline</b-nav-item>
       </b-navbar-nav>
 

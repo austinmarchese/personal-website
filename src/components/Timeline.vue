@@ -46,7 +46,13 @@ export default {
   }
 
 .gb-vue-timeline-update .gb-vue-timeline-update__right .gb-vue-timeline-update__thumbnail {
-  max-width: 50% !important;
+  max-width: 60% !important;
+}
+
+@media (max-width: 800px){
+ .gb-vue-timeline-update .gb-vue-timeline-update__right .gb-vue-timeline-update__thumbnail {
+  max-width: 100% !important;
+}
 }
  /* .gb-vue-timeline-update--light .gb-vue-timeline-update__right .gb-vue-timeline-update__description {
   color: red; 
