@@ -3,7 +3,7 @@
     <!-- <notification-container
       :status="status"
     /> -->
-    <form method="post" @submit.prevent="handleSubmit">
+    <form method="post" name="test-speaker" netlify netlify-honeypot="bot-field" hidden>
       <input type="hidden" name="form-name" value="ask-question" />
       <ul>
       <li>
