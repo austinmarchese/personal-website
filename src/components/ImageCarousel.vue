@@ -1,6 +1,7 @@
 <template>
     <div>
-        <CardFormat header="Explore" quote="The biggest adventure you can take is to live the life of your dreams." author="Oprah">
+        <CardFormat header="Explore" quote="And I ain't gonna wait for nothing
+'Cause that just ain't my style..." author="Mac Miller">
             <b-row no-gutters>
                 <b-col md="6" offset-md="3">
                     <b-carousel id="carousel-1" v-model="slide" :interval="1600" controls indicators

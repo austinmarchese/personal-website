@@ -62,7 +62,7 @@ const events = [
         eventDate: '2014-09-05',
       },
       {
-        eventTitle: "Cut from Basketball",
+        eventTitle: "Cut from Basketball Team",
         eventDescription: "Cut from College Basketball team, an end of a career... time to start the next ¯|_(ツ)_/¯",
         eventType: FAILURE,
         eventThumbnail: "",
@@ -97,15 +97,15 @@ const events = [
         eventDate: '2018-05-06',
       },
       {
-        eventTitle: "Denied by Harvard Business School",
-        eventDescription: "1 of 200 finalists to get interviewed for a 2 year differred MBA program, denied because I 'lacked passion and career direction' as a 22 year old",
+        eventTitle: "Denied by Harvard Business School (HBS)",
+        eventDescription: "Denied from HBS Differed MBA program, I was told I 'lacked passion and career direction' as a 22 year old. A mechanical engineer going into Tech? I guess they were right lol.",
         eventType: FAILURE,
         eventThumbnail: require('./harvard.png'),
         eventDate: '2018-06-05',
       },
       {
         eventTitle: "Start at J.P. Morgan as a Software Engineer",
-        eventDescription: "Begin software engineering career without any experience or formal schooling",
+        eventDescription: "Begin software engineering career without any experience or formal schooling, yolo.",
         eventType: EXPERIENCE,
         eventThumbnail: "",
         eventDate: '2018-09-05',

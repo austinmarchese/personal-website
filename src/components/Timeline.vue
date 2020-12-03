@@ -1,8 +1,7 @@
 <template>
   <div>
     <CardFormat header="Timeline" 
-    quote="And I ain't gonna wait for nothing
-'Cause that just ain't my style..." author="Mac Miller">
+    quote="I guess we'll never know what Harvard gets us" author="Drake">
         <div v-for="event in events" :key="event.eventTitle" class="timeline-wrapper">
           <vue-timeline-update v-if="event.eventThumbnail == ''" :date="new Date(event.eventDate)"
             :title="event.eventTitle" 
