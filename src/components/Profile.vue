@@ -1,6 +1,6 @@
 <template>
   <div>
-    <CardFormat header="Profile" quote="You gotta risk it to get the buscuit." author="Anonymous">
+    <CardFormat header="Profile" quote="You gotta risk it to get the biscuit." author="Anonymous">
       <b-row no-gutters>
         <b-col md="4">
           <b-card-body style="font-size: 28px;" sub-title="About Me">
