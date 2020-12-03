@@ -61,7 +61,7 @@ export default {
       title: 'Welcome to My Webpage!',
       meta: [
           // Twitter Card
-          {name: 'twitter:card', content: "Austin Marchese's personal website"},
+          {name: 'twitter:card', content: "Austin_Marchese's_personal_website"},
           {name: 'twitter:title', content: 'My Personal Website'},
           {name: 'twitter:description', content: "As the world becomes more digital, your personal brand is everything. Having a personal website is a way to express yourself outside the confines of a traditoinal resume. Whether you're anything from an entrepreneur to a banker, a website allows you to show your potential employers, employees, clients or co-workers that you're more than just a resume."},
           // image must be an absolute path
