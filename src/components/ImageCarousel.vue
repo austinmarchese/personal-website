@@ -54,9 +54,9 @@
                     }
                 }
                 const countryCode = this.locations[slide].countryCode
-                console.log(slide, countryCode)
+                // console.log(slide, countryCode)
                 this.countryData[countryCode] = 1
-                console.log(slide, countryCode, this.countryData)
+                // console.log(slide, countryCode, this.countryData)
                 //   I think Package Requires a complete change in the object reference to create a new highlighting
                 this.countryData = {
                     ...this.countryData
