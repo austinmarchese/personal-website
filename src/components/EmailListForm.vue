@@ -11,13 +11,6 @@
       data-netlify="true"
       data-netlify-honeypot="bot-field"
     >
-      <input type="hidden" name="form-name" value="contact-form">
-      <p class="hidden">
-        <label>
-          Don't fill this out if you're human:
-          <input name="bot-field">
-        </label>
-      </p>
       <div class="mb-4">
         <label
           class="block text-gray-700 text-xl font-bold mb-2"
@@ -48,21 +41,6 @@
           data-hj-whitelist
         >
       </div>
-      <label class="block mb-2">
-        <label
-          class="block text-gray-700 text-xl font-bold mb-2"
-          for="message"
-        >Message</label>
-        <textarea
-          id="message"
-          v-model="message"
-          name="message"
-          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline form-textarea mt-1 block w-full"
-          rows="3"
-          placeholder="Enter your message here..."
-          data-hj-whitelist
-        />
-      </label>
       <div class="flex items-center justify-between">
         <button
           :disabled="!canSubmit"
@@ -90,7 +68,7 @@ export default {
   },
   computed: {
     canSubmit () {
-      return !!(this.email && this.name && this.message)
+      return !!(this.email && this.name)
     }
   }
 }
