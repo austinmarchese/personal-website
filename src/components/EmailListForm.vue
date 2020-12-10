@@ -55,7 +55,7 @@ import CardFormat from './CardFormat.vue';
                 isFormDisplayed: true,
                 email: '',
                 name: '',
-                displayMessage: "Fill out the below form and I'll reach out to you!"
+                displayMessage: "Fill out the form below and I'll reach out to you!"
             }
         },
         computed: {
