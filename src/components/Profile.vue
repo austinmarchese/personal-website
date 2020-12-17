@@ -48,8 +48,8 @@
             </b-card-text>
           </b-card-body>
         </b-col>
-        <b-col md="4">
-          <b-img thumbnail rounded="circle" :src="require('../assets/image 11.png')" alt="Image 2"></b-img>
+        <b-col md="4" style="margin:auto">
+          <b-img thumbnail rounded="circle"  v-bind="headshot" :src="require('../assets/twitterIcon.png')" alt="Image 2"></b-img>
         </b-col>
         <b-col md="4">
           <b-card-body>
@@ -99,6 +99,7 @@
     },
         data() {
       return {
+        headshot:{ width: 260, height: 260, class: 'm1' },
         mainProps: { width: 30, height: 30, class: 'm1' }
       }
     },

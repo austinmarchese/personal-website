@@ -83,8 +83,8 @@ const events = [
         eventDate: '2018-05-05',
       },
       {
-        eventTitle: "Denied Valedictorian",
-        eventDescription: "Denied Valedictorian award because of a late grade change and the School told me that they already 'Printed the Pamphlets' for Graduation",
+        eventTitle: "Valedictorian? Not Today!",
+        eventDescription: "Was told by school administrators that I wouldn't be recognized as valedicotrian because of a late grade change and the School had already 'printed the pamphlets' for Graduation. At this moment I knew, grades do not matter.",
         eventType: FAILURE,
         eventThumbnail: "",
         eventDate: '2018-05-05',
@@ -97,8 +97,8 @@ const events = [
         eventDate: '2018-05-06',
       },
       {
-        eventTitle: "Denied by Harvard Business School (HBS)",
-        eventDescription: "Denied from HBS Differed MBA program, I was told I 'lacked passion and career direction' as a 22 year old. A mechanical engineer going into Tech? I guess they were right lol.",
+        eventTitle: "Harvard Business School (HBS) says 'Nahhhh'",
+        eventDescription: "Denied by HBS. Can you blame them? It was clear after my 30 min interview that I 'lacked the passion and career direction' NEEDED for Harvard.",
         eventType: FAILURE,
         eventThumbnail: require('./harvard.png'),
         eventDate: '2018-06-05',
@@ -132,8 +132,8 @@ const events = [
         eventDate: '2020-05-05',
       },
       {
-        eventTitle: "7 Day Hospital Trip",
-        eventDescription: "Spent 7 days in a Hosptial recovering from a complicated Appendicitis case.",
+        eventTitle: "7 Day Hospital Research Trip",
+        eventDescription: "Spent 7 days in a Hosptial, I wrote about it on my Medium. Scroll to my profile and click in. Maybe you'll like it.",
         eventType: EXPERIENCE,
         eventThumbnail: "",
         eventDate: '2020-07-16',
