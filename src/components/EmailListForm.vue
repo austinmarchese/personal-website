@@ -1,9 +1,7 @@
 <template>
     <div class="w-full max-w-xl">
         <div v-if="!isButtonClicked">
-            <b-button v-on:click="handleClick()">
-                <p class="card-title" style="margin:auto; color: #ff9900; font-size:22px">Intersted in your own site? Click to find out more</p>
-                </b-button>
+                 <b-button  v-on:click="handleClick()" variant="light" pill>Intersted in your own site? Click to find out more</b-button>
         </div>
         <div v-else>
         <CardFormat header="" :quote="this.displayMessage" author="Austin">
