@@ -1,6 +1,7 @@
 <template>
 <div class="header-container">
-  <h1 class="display-4">Welcome...</h1>
+  <!-- <b-navbar-brand style="font-family: 'Comic Sans MS', cursive, sans-serif;" href="#">Welcome...</b-navbar-brand> -->
+  <h1 class="display-4 test">Welcome...</h1>
   <p class="lead">People of Action are Favored by the Goddess of Good Luck</p>
   <hr class="my-4">
   <p class="lead">
@@ -20,6 +21,10 @@ export default {
 };
 </script>
 <style>
+
+.test {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 .header-container {
     padding-top: 110px;

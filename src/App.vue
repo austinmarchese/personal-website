@@ -15,7 +15,7 @@
     <ImageCarousel style="padding-top:100px" class="content" id="explore"/>
     <!-- <SkillsCard style="padding-top:100px" id="abilities"/> -->
     <Timeline style="padding-top:100px"  id="timeline" class="content"/>
-
+    <EmailListForm style="padding-bottom:100px"/>
     
   </div>
 </template>
@@ -104,7 +104,8 @@ export default {
 }
 html, body {
     color: #434242;
-    font-family: 'Open Sans', sans-serif !important;
+    font-family: 'Comic Sans MS', cursive, sans-serif !important;
+    /* font-family: 'Open Sans', sans-serif !important; */
     height: 100%;
 }
 .content {
@@ -122,12 +123,14 @@ h4 {
     text-align: center;
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong, b {
-    font-family: 'Open Sans', sans-serif !important;
+    /* font-family: 'Noto Sans JP', sans-serif !important; */
+    font-family: 'Comic Sans MS', cursive, sans-serif !important;
     margin-bottom: 20px;
 }
 
+
 html, body {
     color: #434242;
-    font-family: 'Open Sans', sans-serif !important;
+    font-family: 'Comic Sans MS', cursive, sans-serif !important;
 }
 </style>
