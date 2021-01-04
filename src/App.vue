@@ -124,7 +124,7 @@ h4 {
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong, b {
     /* font-family: 'Noto Sans JP', sans-serif !important; */
-    font-family: 'Comic Sans MS', cursive, sans-serif !important;
+    font-family: 'Noto Sans JP', cursive, sans-serif !important;
     margin-bottom: 20px;
 }
 
