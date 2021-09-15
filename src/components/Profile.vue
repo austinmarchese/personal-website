@@ -61,7 +61,7 @@
               </b-card-body>
               <b-card-body sub-title="Age">
                 <b-card-text>
-                  A young 24
+                  A young 25
                 </b-card-text>
               </b-card-body>
               <b-card-body sub-title="Location">
