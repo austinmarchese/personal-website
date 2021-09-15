@@ -145,13 +145,6 @@ const events = [
         eventThumbnail: require('./SanDiego.jpg'),
         eventDate: '2020-09-01',
       },
-      {
-        eventTitle: "The Incubator",
-        eventDescription: "Working with a community of people that embraces teamwork and growth. We are all trying to learn, so lets do it together. If you're here from the scavanger hunt, promocode: togetherwegrow",
-        eventType: EXPERIENCE,
-        eventThumbnail: require('./Incubator.png'),
-        eventDate: '2021-01-01',
-      },
 
 ]
 
