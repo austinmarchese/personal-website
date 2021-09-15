@@ -35,7 +35,8 @@
     "node-sass": "^5.0.0",
     "sass-loader": "^10.0.5",
     "vue-cli-plugin-mdb": "~2.1.0",
-    "vue-template-compiler": "^2.6.12"
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^4.46.0"
   },
   "eslintConfig": {
     "root": true,
