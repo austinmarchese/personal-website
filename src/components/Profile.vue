@@ -5,8 +5,8 @@
         <b-col md="4">
           <b-card-body style="font-size: 28px;" sub-title="About Me">
             <b-card-text>
-              I'm a passionate developer who knows how to establish a
-              collaborative and fun work environment. A true leader is someone that can inspire and empower others, and that is something I strive to do every day. 
+              A true leader is someone that can inspire and empower others, and that is something I strive to do every day. My goal is to help change the world for the better.
+              Steve Jobs once said, “Everything around you that you call life, was made up by people that were no smarter than you.”
             </b-card-text>
           </b-card-body>
           <b-card-body>
