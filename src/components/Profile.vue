@@ -67,7 +67,7 @@
               </b-card-body>
               <b-card-body sub-title="Location">
                 <b-card-text>
-                  San Diego, California....For now
+                  Austin, Texas...For now
                 </b-card-text>
 
               </b-card-body>
