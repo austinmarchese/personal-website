@@ -7,6 +7,7 @@
             <b-card-text>
               A true leader is someone that can inspire and empower others, and that is something I strive to do every day. My goal is to help change the world for the better.
               Steve Jobs once said, “Everything around you that you call life, was made up by people that were no smarter than you.”
+              So why not us?
             </b-card-text>
           </b-card-body>
           <b-card-body>
